@@ -1,0 +1,68 @@
+-Use cookies or some such to allow users to edit song choices
+
+-Provide tipping functionality or something?  Venmo API?
+
+-How can I handle a repeatedly refreshing song list for free?  do I set it up with a home server or some crazy shit?
+
+-Should I track most popular?
+
+-Total Song List:
+-Postgres with GraphQL
+-What backend framework?  Django vs Express?
+-Fields: Title, Artist, req num?, forbidden zone that only gets played with bribery?, some id that's in the monkey system?
+-
+
+Frontend:
+-React + Recoil for state management
+-Use localstorage for login somehow, look for secure solution?  How to make it only accessible on the one device?
+-
+
+MOST POPULAR:
+-Use either a paging algorithm or actually track reqs
+-Either way, use redis for it
+
+COMING UP:
+-Redis DB
+-Just add to end of list for new additions
+-Do I be that dude and directly enable bribery?
+
+
+Requirements:
+FRONT-END
+Functional:
+Users will be able to
+-request one song at a time-host will have to deal with spam on their own somehow
+-request a song and have their chosen name attached to the request
+-tip the host by pulling up an info blurb w/ pic and qr code
+
+Admins will be able to
+-Edit the requested list to their liking with drag/drop and button functionality
+-Add and remove songs from the database
+-see the requested song list update in real time
+
+The app will
+-use something like websockets or timed reqs to pull the "coming up" list
+-show if a song in the search page is coming up
+-feature an admin portal that will be the only externally-accessible part of it
+-Permit addition via csv?
+
+Non-Functional: 
+Users will
+-not have to wait more than 0.5s for songs to pop up when searching
+-
+
+Admins will
+-be able to see/edit upcoming list with extremely low latency
+-be able to add/remove songs with low latency
+
+The app will
+-Allow users to get to any functionality within one or two taps
+
+
+BACK-END
+Functional: 
+-Search reqs will look for string matches across artists and titles
+-Track most popular?  idk
+
+Non-Functional:
+-Operate securely with connection encryption and admin pw hashing
