@@ -37,6 +37,7 @@ Users will be able to
 
 Admins will be able to
 -Edit the requested list to their liking with drag/drop and button functionality
+-Edit song details in-place.  Use existing data to create minimalist forms with a button to save changes
 -Add and remove songs from the database
 -see the requested song list update in real time
 
@@ -49,7 +50,7 @@ The app will
 Non-Functional: 
 Users will
 -not have to wait more than 0.5s for songs to pop up when searching
--
+-not encounter moments of complete inactivity on the site
 
 Admins will
 -be able to see/edit upcoming list with extremely low latency
