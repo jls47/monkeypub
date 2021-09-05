@@ -6,16 +6,23 @@
 
 -Should I track most popular?
 
+-Only really gonna be tablet + desktop right?
+
 -Total Song List:
--Postgres with GraphQL
--What backend framework?  Django vs Express?
+-Postgres
+-Django for the main backend
 -Fields: Title, Artist, req num?, forbidden zone that only gets played with bribery?, some id that's in the monkey system?
--
+-Admin login of course
 
 Frontend:
 -React + Recoil for state management
+-GraphQL for requests to the Song Queue
 -Use localstorage for login somehow, look for secure solution?  How to make it only accessible on the one device?
 -
+
+Backend:
+-Main: Django with PostGres
+-Song Queue: TS/Express with Redis & GraphQL
 
 MOST POPULAR:
 -Use either a paging algorithm or actually track reqs
@@ -64,6 +71,7 @@ BACK-END
 Functional: 
 -Search reqs will look for string matches across artists and titles
 -Track most popular?  idk
+-Admins will be able to log directly into the backend via django's admin stuff
 
 Non-Functional:
 -Operate securely with connection encryption and admin pw hashing

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Button from '@material-ui/core/Button'
 import logo from './logo.svg'
 import './App.css'
 
@@ -12,12 +11,12 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <Button variant="contained" color="primary" onClick={() => setCount((count) => count + 1)}>
+          <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
-          </Button>
+          </button>
         </p>
         <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
+          Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
         <p>
           <a
