@@ -1,12 +1,6 @@
-type SearchResultsProps = {
+import React from 'react';
 
-};
-
-type SearchResultsState = {
-
-};
-
-class SearchResults extends React.Component<SearchResultsProps, SearchResultsState> {
+class SearchResults extends React.Component {
 
 	render() {
 		return (
@@ -14,3 +8,5 @@ class SearchResults extends React.Component<SearchResultsProps, SearchResultsSta
 		)
 	}
 }
+
+export default SearchResults;

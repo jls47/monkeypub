@@ -1,12 +1,6 @@
-type SearchBoxProps = {
+import React from 'react';
 
-};
-
-type SearchBoxState = {
-
-};
-
-class SearchBox extends React.Component<SearchBoxProps, SearchBoxState> {
+class SearchBox extends React.Component {
 
 	render() {
 		return (
@@ -14,3 +8,5 @@ class SearchBox extends React.Component<SearchBoxProps, SearchBoxState> {
 		)
 	}
 }
+
+export default SearchBox;

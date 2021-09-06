@@ -1,12 +1,6 @@
-type TipBoxProps = {
+import React from 'react';
 
-};
-
-type TipBoxState = {
-
-};
-
-class TipBox extends React.Component<TipBoxProps, TipBoxState> {
+class TipBox extends React.Component {
 
 	render() {
 		return (
@@ -14,3 +8,5 @@ class TipBox extends React.Component<TipBoxProps, TipBoxState> {
 		)
 	}
 }
+
+export default TipBox;

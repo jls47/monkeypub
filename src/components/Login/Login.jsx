@@ -1,12 +1,6 @@
-type LoginProps = {
+import React from 'react';
 
-};
-
-type LoginState = {
-
-};
-
-class Login extends React.Component<LoginProps, LoginState> {
+class Login extends React.Component {
 
 	render() {
 		return (
@@ -14,3 +8,5 @@ class Login extends React.Component<LoginProps, LoginState> {
 		)
 	}
 }
+
+export default Login;	

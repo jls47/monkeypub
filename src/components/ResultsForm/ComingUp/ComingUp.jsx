@@ -1,12 +1,6 @@
-type ComingUpProps = {
+import React from 'react';
 
-};
-
-type ComingUpState = {
-
-};
-
-class ComingUp extends React.Component<ComingUpProps, ComingUpState> {
+class ComingUp extends React.Component {
 
 	render() {
 		return (
@@ -14,3 +8,5 @@ class ComingUp extends React.Component<ComingUpProps, ComingUpState> {
 		)
 	}
 }
+
+export default ComingUp;

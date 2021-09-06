@@ -1,12 +1,6 @@
-type RecentsProps = {
+import React from 'react';
 
-};
-
-type RecentsState = {
-
-};
-
-class Recents extends React.Component<RecentsProps, RecentsState> {
+class Recents extends React.Component {
 
 	render() {
 		return (
@@ -14,3 +8,5 @@ class Recents extends React.Component<RecentsProps, RecentsState> {
 		)
 	}
 }
+
+export default Recents;

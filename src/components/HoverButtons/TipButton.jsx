@@ -1,12 +1,6 @@
-type TipButtonProps = {
+import React from 'react';
 
-};
-
-type TipButtonState = {
-
-};
-
-class TipButton extends React.Component<TipButtonProps, TipButtonState> {
+class TipButton extends React.Component {
 
 	render() {
 		return (
@@ -14,3 +8,5 @@ class TipButton extends React.Component<TipButtonProps, TipButtonState> {
 		)
 	}
 }
+
+export default TipButton;

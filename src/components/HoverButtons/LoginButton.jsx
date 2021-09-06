@@ -1,12 +1,6 @@
-type LoginButtonProps = {
+import React from 'react';
 
-};
-
-type LoginButtonState = {
-
-};
-
-class LoginButton extends React.Component<LoginButtonProps, LoginButtonState> {
+class LoginButton extends React.Component {
 
 	render() {
 		return (
@@ -14,3 +8,5 @@ class LoginButton extends React.Component<LoginButtonProps, LoginButtonState> {
 		)
 	}
 }
+
+export default LoginButton;

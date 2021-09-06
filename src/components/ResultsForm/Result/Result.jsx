@@ -1,12 +1,6 @@
-type ResultProps = {
+import React from 'react';
 
-};
-
-type ResultState = {
-
-};
-
-class Result extends React.Component<ResultProps, ResultState> {
+class Result extends React.Component {
 
 	render() {
 		return (
@@ -14,3 +8,5 @@ class Result extends React.Component<ResultProps, ResultState> {
 		)
 	}
 }
+
+export default Result;
