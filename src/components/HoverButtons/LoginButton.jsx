@@ -10,15 +10,19 @@ const LoginButton = (props) => {
 
 	let icon = <Login/>;
 
-	const isLogged = useRecoilValue(logState);
+	const [adLog, adLogin] = useRecoilState(logState);
 
-	if(isLogged) {
+	const isAdmin = useRecoilValue(logState);
+
+	const logAdmin = (event) => adLogin(!isAdmin);
+
+	if(isAdmin) {
 		icon = <Logout/>;
 	}
 
 	return (
 		<div>
-		<Fab color='primary' aria-label='login'>
+		<Fab color='primary' aria-label='login' onClick={logAdmin}>
 			{icon}
 		</Fab>
 		<p>(login button)</p>

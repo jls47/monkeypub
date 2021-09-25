@@ -10,6 +10,7 @@ import Result from './components/ResultsForm/Result/Result'
 import SearchResults from './components/ResultsForm/SearchResults/SearchResults'
 import SearchBox from './components/SearchBox/SearchBox'
 import TipBox from './components/TipBox/TipBox'
+import AddingModal from './components/AddingModal/AddingModal'
 
 import {  RecoilRoot,  atom,  selector,  useRecoilState,  useRecoilValue, useSetRecoilState} from 'recoil';
 
@@ -56,6 +57,10 @@ function App() {
           <br></br>
           
           <TipBox></TipBox>
+          <br></br>
+
+          <AddingModal></AddingModal>
+          
         </div>
       </header>
     </div>
