@@ -13,15 +13,18 @@ const Login = (props) => {
 
 	const logUser = (event) => setLogin(!isLogged);
 
+	let l = "logout";
+
 	let s = "logged in";
 
 	if(!isLogged) {
 		s = "not logged in";
+		l = "login";
 	}
 
 	return (
         <div onClick={logUser}>
-        <p>Login</p>
+        <p>{l}</p>
         <p>Logged in: {s}</p>
         </div>
 

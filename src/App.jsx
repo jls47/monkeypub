@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import LoginButton from './components/HoverButtons/LoginButton'
-import TipButton from './components/HoverButtons/TipButton'
+import TipAddButton from './components/HoverButtons/TipButton'
 import Login from './components/Login/Login'
 import ComingUp from './components/ResultsForm/ComingUp/ComingUp'
 import Recents from './components/ResultsForm/Recents/Recents'
@@ -19,7 +19,7 @@ import { Button } from '@material-ui/core'
 
 function App() {
 
-  
+
 
   return (
     <RecoilRoot>
@@ -34,7 +34,7 @@ function App() {
           <LoginButton></LoginButton>
           <br></br>
 
-          <TipButton></TipButton>
+          <TipAddButton></TipAddButton>
           <br></br>
           
           <Login></Login>
