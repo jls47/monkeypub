@@ -1,12 +1,12 @@
 import React from 'react';
+import { atom, useRecoilState } from 'recoil';
 
-class Login extends React.Component {
+const Login = (props) => {
 
-	render() {
-		return (
-			<div>Login</div>
-		)
-	}
+	return (
+        <div>Login</div>
+	)
+	
 }
 
 export default Login;	

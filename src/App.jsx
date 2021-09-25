@@ -11,17 +11,23 @@ import SearchResults from './components/ResultsForm/SearchResults/SearchResults'
 import SearchBox from './components/SearchBox/SearchBox'
 import TipBox from './components/TipBox/TipBox'
 
+import {  RecoilRoot,  atom,  selector,  useRecoilState,  useRecoilValue, useSetRecoilState} from 'recoil';
+
 import { Button } from '@material-ui/core'
 
 
+
 function App() {
-  const [count, setCount] = useState(0)
+
+  
 
   return (
+    <RecoilRoot>
     <div className="App">
       <header className="App-header">
         <p>Welcome!  Work in Progress.</p>
         <Button variant="contained" color="primary" href="https://material-ui.com">Made with Material UI</Button>
+
         <p>Components:</p>
 
         <div className="Components">
@@ -53,7 +59,8 @@ function App() {
         </div>
       </header>
     </div>
-  )
+    </RecoilRoot>
+  );
 }
 
 export default App

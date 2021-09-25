@@ -1,12 +1,10 @@
 import React from 'react';
 
-class TipBox extends React.Component {
-
-	render() {
-		return (
-			<div>TipBox</div>
-		)
-	}
+const TipBox = (props) => {
+	return (
+		<div>TipBox</div>
+	)
+	
 }
 
 export default TipBox;

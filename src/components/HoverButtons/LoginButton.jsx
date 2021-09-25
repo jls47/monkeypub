@@ -1,12 +1,11 @@
 import React from 'react';
 
-class LoginButton extends React.Component {
+const LoginButton = (props) => {
+	return (
+		<div>LoginButton</div>
+       	//<Button variant="contained" color="primary" onClick={() => setLogin(admin => admin = !admin)}>Login</Button>
+	)
 
-	render() {
-		return (
-			<div>LoginButton</div>
-		)
-	}
 }
 
 export default LoginButton;
