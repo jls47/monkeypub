@@ -16,7 +16,10 @@ const LoginButton = (props) => {
 
 	const logAdmin = (event) => adLogin(!isAdmin);
 
+	let s = "login";
+
 	if(isAdmin) {
+		s = "logout";
 		icon = <Logout/>;
 	}
 
@@ -25,7 +28,7 @@ const LoginButton = (props) => {
 		<Fab color='primary' aria-label='login' onClick={logAdmin}>
 			{icon}
 		</Fab>
-		<p>(login button)</p>
+		<p>({s} button)</p>
 		</div>
        	//<Button variant="contained" color="primary" onClick={() => setLogin(admin => admin = !admin)}>Login</Button>
 	)
