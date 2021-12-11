@@ -1,4 +1,5 @@
 import React from 'react';
+import './ComingUp.css';
 import { atom, useRecoilState, useRecoilValue } from 'recoil';
 import { logState } from '../../../state/logState';
 

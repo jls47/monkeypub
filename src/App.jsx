@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import LoginButton from './components/HoverButtons/LoginButton'
-import TipAddButton from './components/HoverButtons/TipButton'
+import TipButton from './components/HoverButtons/TipButton'
+import AddingButton from './components/HoverButtons/AddingButton'
 import Login from './components/Login/Login'
 import ComingUp from './components/ResultsForm/ComingUp/ComingUp'
 import Recents from './components/ResultsForm/Recents/Recents'
@@ -35,7 +36,10 @@ function App() {
           <LoginButton></LoginButton>
           <br></br>
 
-          <TipAddButton></TipAddButton>
+          <TipButton></TipButton>
+          <br></br>
+
+          <AddingButton></AddingButton>
           <br></br>
           
           <Login></Login>

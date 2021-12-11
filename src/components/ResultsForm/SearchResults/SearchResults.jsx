@@ -1,4 +1,5 @@
 import React from 'react';
+import './SearchResults.css';
 
 const SearchResults = (props) => {
 	return (

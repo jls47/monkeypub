@@ -1,4 +1,5 @@
 import React from 'react';
+import './Recents.css';
 
 const Recents = (props) => {
 	return (

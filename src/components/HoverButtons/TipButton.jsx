@@ -1,34 +1,30 @@
 import React from 'react';
-
+import './TipButton.css';
 
 import { atom, useRecoilState, useRecoilValue } from 'recoil';
 import { logState } from '../../state/logState';
 
 import { Fab } from '@material-ui/core';
-import { MonetizationOn, Add} from '@mui/icons-material';
+import { MonetizationOn } from '@mui/icons-material';
 
-const TipAddButton = (props) => {
+const TipButton = (props) => {
 
 	
 	let icon = <MonetizationOn/>;
 
 	const admin = useRecoilValue(logState);
 
-	if(admin) {
-
-		icon = <Add/>;
-	}
 
 	return (
 		<div>
 		<Fab color='primary' aria-label='tip'>
 			{icon}
 		</Fab>
-		<p>(Tip/Add Button)</p>
+		<p>Tip Button</p>
 
 		</div>
 	)
 	
 }
 
-export default TipAddButton;
+export default TipButton;

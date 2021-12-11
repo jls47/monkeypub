@@ -1,4 +1,5 @@
 import React from 'react';
+import './AddingModal.css';
 import { atom, useRecoilState, useRecoilValue } from 'recoil';
 
 
@@ -14,4 +15,4 @@ const AddingModal = (props) => {
 
 }
 
-export default AddingModal
+export default AddingModal;

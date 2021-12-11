@@ -1,4 +1,5 @@
 import React from 'react';
+import './TipBox.css';
 
 const TipBox = (props) => {
 	return (
